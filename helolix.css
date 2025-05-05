@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', cursive;
+    background: linear-gradient(135deg, #fff0f6, #ffe6f9);
+    color: #5a004f;
+    line-height: 1.6;
+    padding-bottom: 80px;
+    background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+  }
+  
+  header {
+    background: linear-gradient(to right, #ffd6e0, #ffb6d1);
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    border-bottom: 4px dotted #ff69b4;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    color: #ad0073;
+    text-shadow: 2px 2px 4px #ffffff;
+  }
+  
+  header p {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #800040;
+  }
+  
+  .foto-redonda {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 25px;
+    border: 4px double #fff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  header img:hover {
+    transform: scale(1.1) rotate(3deg);
+    border-color: #ffd6e0;
+  }
+  
+  section {
+    max-width: 960px;
+    margin: 50px auto;
+    background: #fff5fa;
+    border-radius: 25px;
+    padding: 35px;
+    box-shadow: 0 0 25px rgba(255, 182, 193, 0.4);
+    border: 3px double #ff99cc;
+  }
+  
+  section h2 {
+    font-size: 2.2rem;
+    color: #d63384;
+    margin-bottom: 25px;
+    position: relative;
+  }
+  
+  section h2::after {
+    content: '★';
+    color: #ff69b4;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    font-size: 1.2rem;
+    animation: twinkle 2s infinite ease-in-out;
+  }
+  
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+  }
+  
+  .hobby {
+    background: #fff;
+    padding: 25px;
+    border-radius: 30px;
+    margin-bottom: 25px;
+    border-left: 8px solid #ffb6c1;
+    box-shadow: 0 8px 18px rgba(255, 182, 193, 0.3);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .hobby:hover {
+    transform: scale(1.03);
+    background: #fff0f8;
+    border-left-color: #ff69b4;
+  }
+  
+  .hobby h3 {
+    margin-bottom: 12px;
+    color: #ff1493;
+    font-family: 'Segoe Script', cursive;
+    font-size: 1.5rem;
+  }
+  
+  .hobby p {
+    font-size: 1rem;
+    color: #4a0033;
+  }
+  
+  .contact p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #660033;
+  }
+  
+  a {
+    color: #e60073;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #ff33aa;
+  }
+  
+  footer {
+    background-color: #ffccdd;
+    color: #660033;
+    text-align: center;
+    padding: 25px;
+    font-size: 15px;
+    border-top: 3px dashed #ff69b4;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.15);
+  }
